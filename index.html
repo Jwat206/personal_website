@@ -21,7 +21,6 @@
 
     <!-- Pocket Menu -->
     <nav id="menu" class="menu">
-        <button id="close-menu" aria-label="Close Menu" onclick="toggleMenu()">&#10005;</button> <!-- "X" button -->
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -48,15 +47,6 @@
             const menu = document.getElementById('menu');
             menu.classList.toggle('open');
         }
-
-        // Close menu when clicking outside of it
-        document.addEventListener('click', (event) => {
-            const menu = document.getElementById('menu');
-            const menuToggle = document.querySelector('.menu-toggle');
-            if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
-                menu.classList.remove('open');
-            }
-        });
     </script>
 </body>
 </html>
