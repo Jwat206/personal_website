@@ -7,7 +7,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
 }
 
 /* Header Styles */
@@ -15,15 +14,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3in; /* Approx. 3 inches */
-    background-color: #f9f9f9; /* Slightly off-white for separation */
+    height: 2in; /* Adjusted height to 2 inches */
+    background-color: #f9f9f9; /* Slightly off-white */
     padding: 0 20px;
-    border-bottom: 2px solid #ddd; /* Subtle bottom border for separation */
+    border-bottom: 2px solid #ddd;
 }
 
 .header-left h1 {
     font-size: 24px;
-    color: red; /* Red accent color for your name */
+    color: red; /* Red accent color */
 }
 
 .menu-toggle {
@@ -35,7 +34,7 @@ body {
 .menu-toggle .bar {
     width: 30px;
     height: 4px;
-    background-color: red; /* Red accent color for the menu icon */
+    background-color: red; /* Red accent */
     margin: 6px 0;
 }
 
@@ -43,21 +42,21 @@ body {
 .menu {
     position: fixed;
     top: 0;
-    right: -250px; /* Hidden off-screen initially */
+    right: -250px; /* Hidden off-screen */
     width: 250px;
     height: 100%;
-    background-color: #fff; /* White background for contrast */
+    background-color: #fff; /* White background */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     transition: right 0.3s ease-in-out; /* Smooth slide-in effect */
 }
 
 .menu.open {
-    right: 0; /* Slide into view when open */
+    right: 0; /* Slide into view */
 }
 
 .menu ul {
     list-style-type: none;
-    padding-top: 50px; /* Space at the top of the menu */
+    padding-top: 50px; /* Space at the top of menu */
 }
 
 .menu li {
@@ -69,23 +68,13 @@ body {
     color: red; /* Red accent for links */
 }
 
-.menu li a:hover {
-    text-decoration: underline;
-}
-
-/* Section Styles */
-.container {
-    width: 80%;
-    margin: auto;
-}
-
-#home {
-    background-color: #f4f4f4;
-    padding: 20px 0;
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 10px 0;
+/* Close Button Styles ("X") */
+#close-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: red; /* Red accent for "X" button */
 }
