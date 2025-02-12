@@ -10,64 +10,69 @@ body {
     line-height: 1.6;
 }
 
+/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
     padding: 1rem 0;
-}
-
-header nav ul {
     display: flex;
-    justify-content: center;
-    list-style: none;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header nav ul li {
-    margin: 0 15px;
+.header-left h1 {
+    margin-left: 20px;
+    color: red; /* Red accent color for the name */
 }
 
-header nav ul li a {
-    color: #fff;
+.header-right {
+    margin-right: 20px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: red; /* Red accent color for the menu icon */
+}
+
+/* Menu Styles */
+.menu {
+    display: none; /* Initially hidden */
+    position: absolute;
+    right: 20px;
+    top: 60px; /* Adjust based on header height */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    padding: 10px;
+}
+
+.menu li {
+    margin: 5px 0;
+}
+
+.menu li a {
+    color: red; /* Red accent color for menu links */
     text-decoration: none;
 }
 
-header nav ul li a:hover {
+.menu li a:hover {
     text-decoration: underline;
 }
 
+/* Section Styles */
 .container {
     width: 80%;
     margin: auto;
-    overflow: hidden;
 }
 
 #home {
     background-color: #f4f4f4;
     padding: 20px 0;
-    text-align: center;
 }
 
-#about {
-    padding: 20px 0;
-}
-
-#about .profile-pic {
-    max-width: 150px;
-    border-radius: 50%;
-}
-
-#contact {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-#contact a {
-    color: #00bcd4;
-}
-
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px 0;
 }
-
