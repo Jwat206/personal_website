@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Jake Wallin's Website</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="header-left">
-                <h1>Your Name</h1>
-            </div>
-            <div class="header-right">
-                <div class="menu-icon" onclick="toggleMenu()">
-                    &#9776; <!-- Two-bar menu icon -->
-                </div>
-            </div>
-            <ul class="menu" id="menu">
+    <header class="main-header">
+        <div class="header-left">
+            <h1>Jake Wallin</h1>
+        </div>
+        <div class="header-right">
+            <button class="menu-toggle" aria-label="Toggle Menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </div>
+        <nav id="menu" class="menu">
+            <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -28,21 +29,21 @@
     <section id="home">
         <div class="container">
             <h1>Welcome to My Website</h1>
-            <p>Hello! I'm [Your Name], and this is my personal website.</p>
+            <p>Hello! I'm Jake Wallin, and this is my personal website.</p>
         </div>
     </section>
 
     <!-- Other sections remain unchanged -->
 
     <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Jake Wallin. All rights reserved.</p>
     </footer>
 
     <!-- JavaScript for the pocket menu -->
     <script>
         function toggleMenu() {
             const menu = document.getElementById('menu');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            menu.classList.toggle('open');
         }
     </script>
 </body>
